@@ -50,7 +50,7 @@ export default function App() {
             className="relative w-32 h-32 rounded-full p-1 bg-gradient-to-tr from-cyan-400 to-purple-600 shadow-[0_0_30px_rgba(168,85,247,0.5)]"
           >
             <img 
-              src="https://api.dicebear.com/9.x/avataaars/svg?seed=Jack&backgroundColor=b6e3f4" 
+              src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" 
               alt="Jack Avatar" 
               className="w-full h-full rounded-full bg-slate-800 object-cover border-4 border-slate-900"
             />

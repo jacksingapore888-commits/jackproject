@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  .text-neon {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 40px #ff00de, 0 0 55px #ff00de, 0 0 75px #ff00de;
+  }
+  
+  .card-glow:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), 0 0 30px rgba(0, 255, 255, 0.3);
+  }
+}
+
+/* Glitch Animation */
+@keyframes glitch {
+  0%, 100% { transform: translate(0); }
+  92% { transform: translate(0); }
+  94% { transform: translate(-2px, 2px); }
+  96% { transform: translate(2px, -2px); }
+  98% { transform: translate(-1px, -1px); }
+}
+
+.animate-glitch {
+  animation: glitch 3s infinite;
+  display: inline-block; /* Required for transform to work on inline elements */
+}
